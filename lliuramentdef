@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "David Caballero Ogazón"
+
+cat /etc/passwd > input.txt
+
+echo "Introdueix cadena de caàcter"
+
+read caracter
+
+cp input.txt output.txt
+
+head -36 input.txt > output.txt
+
+camp1=$(head -37 input.txt | tail -1 | cut -d: -f1) 
+camp3=$(head -37 input.txt | tail -1 | cut -d: -f3-)
+
+linea=$(echo $camp1:$caracter:$camp3)
+
+echo $linea >> output.txt
+
+head -38 input.txt >> output.txt 

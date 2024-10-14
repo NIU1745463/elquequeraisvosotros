@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "David Caballero Ogazón"
+echo "Gora"
 
 cat /etc/passwd > input.txt
 
